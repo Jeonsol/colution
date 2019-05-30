@@ -1,0 +1,106 @@
+.add_issue_dimmed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1000;
+	&.hide {
+		display: none;
+	}
+}
+
+.add_issue_layer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 700px;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	background-color: #fafafa;
+	&.comment {
+		.ly_heading_section {
+			background-color: #d37f70;
+		}
+		.ly_content_area {
+			.content_head {
+				top: 0;
+			}
+		}
+		:global {
+			.rdw-editor-wrapper {
+				padding-top: 35px;
+			}
+		}
+	}
+	.ly_heading_section {
+		height: 60px;
+		line-height: 60px;
+		padding-left: 40px;
+		background-color: #72a498;
+		color: #fff;
+		font-size: 26px;
+	}
+	.ly_content_section {
+		padding: 20px;
+	}
+	.ly_title_area {
+		.title {
+			display: inline-block;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		input {
+			width: 607px;
+			height: 30px;
+			border: 0;
+			background-color: #f1f0f0;
+			vertical-align: top;
+		}
+	}
+	.ly_content_area {
+		position: relative;
+		.content_head {
+			position: absolute;
+			top: 14px;
+			right: -5px;
+			z-index: 10;
+			.ch_label {
+				margin-right: 5px;
+			}
+			.ch_input {
+				margin: 12px 5px 0 0;
+			}
+		}
+		.ly_description {
+			width: 100%;
+			height: 569px;
+			margin: 56px 0 20px;
+			padding: 20px;
+			border: 0;
+			background-color: #f1f0f0;
+			box-sizing: border-box;
+			font-size: 20px;
+		}
+	}
+	.btn_add_issue {
+		width: 100%;
+		height: 40px;
+		border: 0;
+		background-color: #eddfb8;
+		color: #fff;
+		font-size: 16px;
+		text-align: center;
+	}
+	.btn_close {
+		position: absolute;
+		top: 13px;
+		right: 13px;
+		@include sprite($btn-close-36x36);
+		background-color: transparent;
+		border: 0;
+	}
+}

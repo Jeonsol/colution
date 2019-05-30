@@ -1,0 +1,256 @@
+.wrap {
+	overflow: hidden;
+}
+
+header {
+	position: fixed;
+	left: 0;
+	right: 0;
+	padding: 30px 0;
+	background-color: #fff;
+	border-bottom: 1px solid #ccc;
+	z-index: 1;
+}
+
+header .header_area {
+	position: relative;
+	margin: 0 50px;
+	padding-right: 492px;
+}
+
+header .search_area {
+	position: relative;
+	padding-right: 84px;
+}
+
+header .search_bar {
+	width: 100%;
+	height: 30px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+header .btn_submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70px;
+	height: 30px;
+	margin-top: 1px;
+	border: 0;
+	border-radius: 4px;
+	background-color: #3498db;
+	color: #fff;
+	vertical-align: top;
+	font-size: 15px;
+}
+
+header .add_btn {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+}
+
+header .add_btn .add_issue {
+	font-size: 100px;
+	color: #72a498;
+}
+
+section {
+	margin-top: 93px;
+	padding: 20px;
+	background-color: #fafafa;
+}
+
+section .title_section {
+	height: 40px;
+	line-height: 40px;
+	background-color: #eddfb8;
+	text-align: center;
+}
+
+section .user_info {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	margin-top: -35px;
+	width: 50px;
+	text-align: center;
+}
+
+section .user_info .thumbnail {
+	margin-bottom: 2px;
+}
+
+section .user_info .thumbnail .ico_user {
+	font-size: 50px;
+	color: #72a498;
+}
+
+section .user_info .nickname {
+	font-size: 14px;
+}
+
+section .list_set .list {
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #f1f0f0;
+}
+
+section .list_set .list[aria-expanded="false"] .description, section .list_set .list[aria-expanded="false"] .answer_area {
+	display: none !important;
+}
+
+section .list_set .title_area {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	padding-left: 70px;
+	color: #000;
+}
+
+section .list_set .title_area .cont_info {
+	overflow: hidden;
+	padding: 5px 0 0 20px;
+	border-left: 1px solid #ccc;
+	font-size: 14px;
+}
+
+section .list_set .title_area .cont_info .title {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+
+section .list_set .title_area .cont_info .category {
+	display: block;
+}
+
+section .list_set .title_area .cont_info .detail_info {
+	overflow: hidden;
+}
+
+section .list_set .title_area .cont_info .detail_info .date {
+	float: left;
+}
+
+section .list_set .title_area .cont_info .detail_info dl {
+	position: relative;
+	float: left;
+	margin-left: 12px;
+}
+
+section .list_set .title_area .cont_info .detail_info dl:before {
+	position: absolute;
+	top: 3px;
+	bottom: 3px;
+	left: -5px;
+	width: 1px;
+	background-color: #ccc;
+	content: '';
+}
+
+section .list_set .title_area .cont_info .detail_info dl dt, section .list_set .title_area .cont_info .detail_info dl dd {
+	float: left;
+}
+
+section .list_set .description {
+	overflow-y: scroll;
+	height: 100px;
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+
+section .list_set .answer_area {
+	margin-top: 20px;
+}
+
+section .list_set .answer_area .answer_title {
+	overflow: hidden;
+}
+
+section .list_set .answer_area .answer_title .title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+section .list_set .answer_area .add_answer {
+	float: right;
+	width: 70px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	background-color: #ecc776;
+	color: #fff;
+	font-size: 14px;
+	border: 0;
+}
+
+section .list_set .answer_area .answer_list {
+	position: relative;
+	margin-top: 20px;
+}
+
+section .list_set .answer_area .answer_list .description {
+	padding-right: 125px;
+}
+
+section .list_set .answer_area .content_area {
+	position: relative;
+	padding-left: 70px;
+}
+
+section .list_set .answer_area .btn_area {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+section .list_set .answer_area .btn_area .btn {
+	float: left;
+	margin-left: 10px;
+	border: 0;
+}
+
+section .list_set .answer_area .btn_area .recommend {
+	background-image: url(../img/sprite.png);
+	background-position: -50px -24px;
+	width: 24px;
+	height: 24px;
+}
+
+section .list_set .answer_area .btn_area .recommend[aria-selected="true"] {
+	background-image: url(../img/sprite.png);
+	background-position: -50px 0px;
+	width: 24px;
+	height: 24px;
+}
+
+.select_area {
+	position: absolute;
+	top: -3px;
+	right: 0;
+}
+
+.select_area .combobox {
+	float: left;
+	width: 150px;
+	margin-left: 14px;
+}
+
+.select_area .Select-control {
+	height: 38px;
+}
+
+.select_area .Select-multi-value-wrapper {
+	overflow: scroll;
+	height: 31px;
+}
+
+.select_area .Select-placeholder {
+	margin-top: 2px;
+}
+
+/*# sourceMappingURL=App.scss.map */
